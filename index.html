@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Page</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<form method="post" action="save_data.php">
+			<label for="cve">CVE:</label>
+			<input type="text" id="cve" name="cve" required><br><br>
+
+			<label for="cvss">CVSS:</label>
+			<input type="text" id="cvss" name="cvss" required><br><br>
+
+			<label for="cwe">CWE:</label>
+			<input type="text" id="cwe" name="cwe" required><br><br>
+
+			<label for="reference_links">Reference Links:</label>
+			<input type="text" id="reference_links" name="reference_links" required><br><br>
+
+			<label for="description">Description:</label>
+			<textarea id="description" name="description" required></textarea><br><br>
+
+			<label for="data">Data:</label>
+			<input type="text" id="data" name="data" required><br><br>
+
+			<label for="vulnerable_identifier_link">Vulnerable Identifier Link:</label>
+			<input type="text" id="vulnerable_identifier_link" name="vulnerable_identifier_link" required><br><br>
+
+			<label for="version">Version:</label>
+			<input type="text" id="version" name="version" required><br><br>
+
+			<label for="language">Language:</label>
+			<select id="language" name="language" required>
+				<option value="" disabled selected>Select Language</option>
+				<option value="c">C</option>
+				<option value="cpp">C++</option>
+				<option value="java">Java</option>
+				<option value="python">Python</option>
+				<option value="php">PHP</option>
+				<option value="js">JS</option>
+				<option value="rust">Rust</option>
+				<option value="golang">Golang</option>
+				<option value="ruby">Ruby</option>
+				<option value="perl">Perl</option>
+				<option value="c#">C#</option>
+			</select><br><br>
+
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
